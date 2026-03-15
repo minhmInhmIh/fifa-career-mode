@@ -1,0 +1,11 @@
+body {
+  background-image: url("img/background_image.png");
+}
+
+#manager_txt{
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  line-height: 27px;
+  position: relative;
+}
