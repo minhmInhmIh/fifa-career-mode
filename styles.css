@@ -2,10 +2,20 @@ body {
   background-image: url("img/background_image.png");
 }
 
-#manager_txt{
-  color: white;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 2px;
-  line-height: 27px;
-  position: relative;
+.manager-card-hover{
+  width: 768px;
+  height: 512px;
+  background-image: url("img/manager_card_normal.png");  
+  background-size: cover;
+  transition: background-image;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: 1.5px solid grey;
+
+  position: absolute;
+  top: 25%;
+  left: 30%;
 }
+
