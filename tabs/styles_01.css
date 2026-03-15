@@ -1,0 +1,26 @@
+body {
+  background-image: url("img/background_image.png");
+}
+
+.manager-card-hover {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  display: inline-block;
+}
+
+.manager-card-hover img.hover-img {
+  display: none;
+}
+
+.manager-card-hover:hover img.default-img {
+  display: none;
+}
+
+.manager-card-hover:hover img.hover-img {
+  display: block;
+}
+
+
+
+
