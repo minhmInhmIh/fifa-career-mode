@@ -1,5 +1,16 @@
 body {
   background-image: url("img/background_image.png");
+    font-family: "Cruyff Bold";
+}
+
+@font-face {
+  font-family: 'Cruyff Bold';
+  src: url(fonts/CruyffSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Cruyff Light';
+  src: url(fonts/CruyffSans-Light.ttf);
 }
 
 .manager-card-hover {
@@ -67,10 +78,171 @@ body {
   border-top: 10px solid #7a3cff;
 }
 
+.indicator:hover{
+  cursor: pointer;
+  background: hsl(259.08, 100%, 70%);
+  width: 2.5em;
+  border-top: 3px solid hsl(259.08, 100%, 70%);
+}
+
+.indicator:active{
+  background: hsl(259.08, 100%, 80%);
+  width: 2.5em;
+  border-top: 3px solid hsl(259.08, 100%, 80%);
+}
+
 .slot {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 800px;
   transform: translate(-50%, -100%);
   width: 70%;
+}
+
+
+
+.navbar ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  margin-top: 0px;
+  display: block;
+  text-align: center;
+}
+
+#mginfo , #outfit, #head{
+  display: inline-block;
+  padding: 5px 30px;
+  background-color: hsl(251, 39%, 17%);
+  border-bottom: transparent;
+}
+
+#mginfo:hover , #head:hover, #outfit:hover{
+  background-color: hsl(260, 76%, 13%);
+  border-bottom: solid 2px hsl(11, 78%, 44%);
+}
+
+
+.navbar li{
+  float: left;
+}
+
+#attention{
+  display: inline-block;
+  background-color: hsl(252, 17%, 17%);
+  padding: 0px 20px;
+}
+
+#attention h3{
+  color: hsl(163, 95%, 64%);
+  font-size: 100%;
+  display: flex;
+  gap: 255px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+#attention p{
+  color: white;
+  font-size: 100%;
+  font-family: "Cruyff Light";
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+#name ul{ 
+  list-style-type: none; 
+  padding: 0px; 
+  margin: 0px; 
+  display: flexbox; 
+  width: 398px;
+  background-color: hsl(248, 65%, 16%);
+} 
+#name ul label{ 
+  color: white; 
+  margin-top: 0px; 
+  display: block; 
+} 
+#firstname, #lastname, #nationality { 
+  font-family: "Cruyff Light"; 
+  font-weight: bold; 
+  display: flex; 
+  padding: 5px 20px; 
+  background-color: hsl(248, 65%, 16%);
+  border-left: solid 0.1px white;
+}
+#firstname:hover, #lastname:hover, #nationality:hover{
+  background-color: hsl(264, 82%, 56%);
+  border-bottom: solid 0.1px white;
+  .input-box{
+    background-color:hsl(264, 82%, 56%) ;
+  }
+}
+
+#firstname{
+  border-top: solid 0.1px white;
+}
+
+.input-box{
+  background-color: hsl(248, 65%, 16%);
+  border: none;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+}
+
+.input-box::placeholder {
+color: white;
+}
+.input-box:focus{
+  border: none;
+  outline: none;
+}
+.input-box:focus::placeholder{
+  opacity: 0;
+}
+
+
+button{
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.advance-btn{
+  margin-top: 50px;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 2px) calc(100% - 2px) no-repeat,
+            linear-gradient(#ffffff 16%, rgb(52,23,122) 100%);
+  padding: 1px;
+  box-sizing: content-box;
+}
+
+.advance-btn span {
+  display: block;
+  padding: 10px 70px;
+  background-color: hsl(248, 65%, 16%); 
+  color: white;
+  text-align: center;
+}
+
+.advance-btn span:hover{
+  cursor: pointer;
+  background-color: hsl(264, 82%, 56%) ;
+  .advance-btn{
+    background: white;
+  }
+  }
+.advance-btn a{
+  color: white;
+  text-decoration: none;
 }
