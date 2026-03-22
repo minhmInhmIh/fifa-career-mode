@@ -246,3 +246,29 @@ button{
   color: white;
   text-decoration: none;
 }
+
+
+.back-btn {
+  margin-left: 90%;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: hsl(264, 82%, 16%);
+  padding: 5px 20px;
+  border: solid 0.1px white;
+}
+.back-btn b{
+  margin-right: 10px;
+}
+.back-btn i{
+  margin-top: 1px;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+  background-color: hsl(264, 82%, 36%);;
+}
+
+.back-btn:active {
+  background-color: hsl(264, 82%, 86%);;
+}
