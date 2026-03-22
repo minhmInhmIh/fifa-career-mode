@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
+    <audio id="soundtracks"></audio>
 </head>
 <body>
     <div >
@@ -26,19 +27,22 @@
         <ul>
             <li id="firstname">
                 <label>First Name</label>
-                <input class="input-box" type="text" placeholder="A.A.">
+                <input class="input-box" id="fninput" type="text" placeholder="A.A.">
             </li>
             <li id="lastname">
                 <label>Last Name</label>
-                <input class="input-box" type="text" placeholder="Manager">
+                <input class="input-box" id="lninput" type="text" placeholder="Manager">
             </li>
             <li id="nationality">
                 <label>Nationality/Region</label>
-                <input class="input-box" type="text" placeholder="England">
+                <input class="input-box" id="ninput" type="text" placeholder="England">
             </li>
         </ul>
     </div>
-    <button class="advance-btn" ><span><a href="#">ADVANCE</a></span></button>
+    <button id="advance-btn" ><span><a href="#">ADVANCE</a></span></button>
     </div>
+    <script src="mginfo.js">
+    </script>
+    <script src="bg_music.js"></script>
 </body>
 </html>

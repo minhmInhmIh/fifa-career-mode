@@ -219,7 +219,7 @@ button{
   background: none;
 }
 
-.advance-btn{
+#advance-btn{
   margin-top: 50px;
   background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 2px) calc(100% - 2px) no-repeat,
             linear-gradient(#ffffff 16%, rgb(52,23,122) 100%);
@@ -227,7 +227,7 @@ button{
   box-sizing: content-box;
 }
 
-.advance-btn span {
+#advance-btn span {
   display: block;
   padding: 10px 70px;
   background-color: hsl(248, 65%, 16%); 
@@ -235,14 +235,14 @@ button{
   text-align: center;
 }
 
-.advance-btn span:hover{
+#advance-btn span:hover{
   cursor: pointer;
   background-color: hsl(264, 82%, 56%) ;
   .advance-btn{
     background: white;
   }
   }
-.advance-btn a{
+#advance-btn a{
   color: white;
   text-decoration: none;
 }
