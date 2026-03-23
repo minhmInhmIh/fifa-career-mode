@@ -272,3 +272,9 @@ button{
 .back-btn:active {
   background-color: hsl(264, 82%, 86%);;
 }
+
+.team-select{
+  position: absolute;
+  left: 100%;
+  top:50%;
+}
